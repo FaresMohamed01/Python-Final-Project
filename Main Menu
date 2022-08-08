@@ -77,35 +77,53 @@ public static void main_menu_functions(ArrayList<Department> department, ArrayLi
 
               con.close(); 
               break;
-case 3:
-//create connection with university database
-Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/",
-"root", "f7aaa8re9s");
-Statement statement = connection.createStatement(); statement.executeUpdate("use university");
-//User enters the dept_name, location, budget to add in department table in database System.out.println ("Enter the department name:");
-String dept_name = input.next();
-System.out.println ("Enter the location:"); String location = input.next();
-System.out.println ("Enter the budget:"); String budget = input.next();
-boolean check_department = false;
-//Resultset execute the query below
-ResultSet result1 = statement.executeQuery("Select dept_name from department;");
-// The while loop checks one of the two conditions and compares between the departments entered by user to the ones in the database
-while (result1.next()){
-for (int j = 0; j < department.size(); j++){
-if (dept_name.equals(result1.getString(1))){ check_department = true;
-} }
-}
+        
+        case 3:
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/", "root", "f7aaa8re9s");
+            Statement statement = connection.createStatement(); statement.executeUpdate("use university");
+            
+            System.out.println ("Enter the department name:");
+            String dept_name = input.next();
+            
+            System.out.println ("Enter the location:"); 
+            String location = input.next();
+            
+            System.out.println ("Enter the budget:"); 
+            String budget = input.next();
+            
+            boolean check_department = false;
+    
+            //Resultset execute the query below
+            ResultSet result1 = statement.executeQuery("Select dept_name from department;");
+            
+            // The while loop checks one of the two conditions and compares between the departments entered by user to the ones in the database
+            while (result1.next()){
+              for (int j = 0; j < department.size(); j++){
+                    if (dept_name.equals(result1.getString(1))){ 
+                        check_department = true;
+                   }
+              }
+            }
 
-int bu = Integer.parseInt(budget); // Parse string to int
-// if budget is less than zero or the department name entered exist in the database, print error message
-if (bu < 0 || check_department == true){
-System.out.println ("Error! Budget is less than 0 or the department entered exists in
-the database"); }
-//if the conditions applied, insert the dept_name, location, budget to department table else if (check_department == false && bu >= 0 ) {
-int insert = statement.executeUpdate("insert into department values ('"+dept_name+"', '"+location+"', '"+budget+"')");
-System.out.println ("New Department Added to database!"); }
-connection.close(); //close connection break;
-default: break;
-} }
-while (select != 4); }
-}
+           int bu = Integer.parseInt(budget); 
+
+           if (bu < 0 || check_department == true){
+               System.out.println ("Error! Budget is less than 0 or the department entered exists in the database"); 
+           }
+
+           else if (check_department == false && bu >= 0 ) {
+              int insert = statement.executeUpdate("insert into department values ('"+dept_name+"', '"+location+"', '"+budget+"')");
+              System.out.println ("New Department Added to database!"); 
+           }
+
+            connection.close(); 
+            break;
+            
+          default: 
+             break;
+          }
+        }
+        
+        while (select != 4); 
+        }
+     }
