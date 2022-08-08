@@ -61,7 +61,7 @@ public class TestProject {
         }
         scanner.close(); //close file
         connection.close(); //close connection 
-      }
+    }
       
      // Creating connection to the database for instructor using its class
     public static void Read_Instructor (ArrayList <Instructor> instructor) throws SQLException, ClassNotFoundException, FileNotFoundException, IOException {
@@ -94,4 +94,4 @@ public class TestProject {
           }
           scanner.close(); //close file
           connection.close(); //close connection 
-        }
+     }
