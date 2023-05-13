@@ -1,12 +1,17 @@
-# University-Registration-System
+# University GUI Python
 
-Connect Java using NetBeans with MYSQL to implement a university registration system.
-Write a Java program that reads the information of instructors and departments then writing database
-queries in Java that add these records to the database (MYSQL)
-Created main menu of three options in Java which have database queries where after every run of the
-code in Java, all updates and people’s choices from the main menu occur in MYSQL
+Python GUI that reads instrcutor and department information from the instructor.txt and department.txt files. 
+Lastly, it displays the appropriate information.
+The GUI also incudes clear radio button to clear all information and quit radio button to quit the GUI.
 
-<img width="732" alt="Screen Shot 2022-08-08 at 7 22 09 PM" src="https://user-images.githubusercontent.com/61517859/183531006-d0259173-1d6e-4641-a8af-db29e7298d1f.png">
-<img width="663" alt="Screen Shot 2022-08-08 at 7 22 15 PM" src="https://user-images.githubusercontent.com/61517859/183531051-5ab67e99-ac09-4669-9d30-672ba3a373c0.png">
-<img width="650" alt="Screen Shot 2022-08-08 at 7 22 21 PM" src="https://user-images.githubusercontent.com/61517859/183531086-25324c89-8dba-41a1-9829-b72db9120f79.png">
-<img width="608" alt="Screen Shot 2022-08-08 at 7 22 25 PM" src="https://user-images.githubusercontent.com/61517859/183531111-e370176b-eb03-4028-b183-f46265895d67.png">
+<img width="401" alt="image" src="https://github.com/FaresMohamed01/University-Registration-System/assets/61517859/61d5b084-f87e-4c14-997b-5da6122ce043">
+
+<img width="401" alt="image" src="https://github.com/FaresMohamed01/University-Registration-System/assets/61517859/001990ae-ff16-4ffe-a136-364229950f7b">
+
+<img width="401" alt="image" src="https://github.com/FaresMohamed01/University-Registration-System/assets/61517859/5a4238cb-6146-42ba-9514-13b9527f9938">
+
+<img width="401" alt="image" src="https://github.com/FaresMohamed01/University-Registration-System/assets/61517859/ef9f5e1a-1695-4f75-b309-d6249bf255a8">
+
+<img width="401" alt="image" src="https://github.com/FaresMohamed01/University-Registration-System/assets/61517859/98c2121b-cbb7-43a2-8d76-f1805b3040c1">
+
+
