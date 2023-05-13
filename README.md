@@ -1,4 +1,4 @@
-# University GUI Python
+# Python Final Project
 
 Python GUI that reads instrcutor and department information from the instructor.txt and department.txt files. 
 Lastly, it displays the appropriate information.
