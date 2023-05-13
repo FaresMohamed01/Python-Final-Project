@@ -1,0 +1,6 @@
+1001,Robert Smith,CMPT
+1002,Natasha Anderson,MATH
+1003,James Nassimi,BIOL
+1004,Guiling Wei,CMPT
+1005,Mary Harnett,BIOL
+1006,David Ochs,CMPT
